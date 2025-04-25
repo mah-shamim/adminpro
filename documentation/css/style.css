@@ -14,6 +14,7 @@
 ------------------------------------------------------- */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
 /* ----------------------------------------------------
     SKELETON    
 ------------------------------------------------------- */
@@ -160,7 +161,7 @@ sub {
 }
 
 p {
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
 }
 
 .check li:before {
@@ -348,9 +349,9 @@ a:hover {
     border: 1px solid #545454;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
     background-color: #0E97EE;
     color: #fff;
 }
@@ -368,24 +369,25 @@ a:hover {
 .navbar-inverse li.btn a {
     color: #ffffff !important;
 }
+
 #myBtn {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  height:40px;
-  width:40px;
-  bottom: 55px;
-  right: 20px;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: grey;
-  color:#ffff;
-  cursor: pointer;
-  padding: 0px;
-  border-radius: 50%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    bottom: 55px;
+    right: 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: #ffff;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 50%;
 }
 
 #myBtn:hover {
-  background-color: #404040;
+    background-color: #404040;
 }
