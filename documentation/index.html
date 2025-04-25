@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>AdminPRO | Documentation by Raman</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#mode').addEventListener('click',()=>{
+                document.querySelector('html').classList.toggle('dark');
+            })
+        });
+
+
+    </script>
+
+    <div id="wrapper">
+
+        <div id="mode" >
+            <div class="dark">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>lightmode</title>
+                    <path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path>
+                </svg>
+            </div>
+            <div class="light">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                    <title>darkmode</title>
+                    <path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>Admin<strong>PRO</strong></h1>
+                            <p class="lead">AdminPro / Documentation</p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li>AdminPro</li>
+                            <li><a href="#line1">Getting Started</a></li>
+                            <li><a href="#line2">How to Install AdminPro</a></li>
+                            <li><a href="#line4">Dependencies & Plugins</a></li>
+                            <li><a href="#line5">Roles & Permissions</a></li>
+                            <li><a href="#line6">Settings</a></li>
+                            <li><a href="#line7">FAQ's</a></li>
+                            <li><a href="#line8">Support Desk</a></li>
+                            <li><a href="#line9">Version History (Changelog)</a></li>
+                            <li><hr></li>
+                            <li>Developer</li>
+                            <li><a href="#line11">File & Folder Structure</a></li>
+                            <li><a href="#line12">Controllers</a></li>
+                            <li><a href="#line13">Models</a></li>
+                            <li><a href="#line14">Views</a></li>
+                            <li><a href="#line15">Helper Functions</a></li>
+                            <li><a href="#line16">MY Model</a></li>
+                            <li><hr></li>
+                            <li><a href="https://adminlte.io/docs/3.0/" target="_blank">AdminLTE Documentation</a></li>
+                            <li><a href="https://www.codeigniter.com/userguide3/index.html" target="_blank">Codeigniter Documentation</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                               <h2 class="dark-text">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+                                        <div class="intro1">
+                                            <ul>
+                                                <li><strong>Item Name : </strong>AdminPro</li>
+                                                <li><strong>Item Version : </strong> v 2.0</li>
+                                                <li><strong>Author  : </strong> <a href="https://codecanyon.net/user/ramantech" target="_blank">ramantech</a></li>
+                                                <li><strong>Support : </strong> <a href="mail:ramansaluja849@gmail.com" target="_blank">ramansaluja849@gmail.com</a></li>
+                                                <li><strong>Technology : </strong> Codeigniter</li>
+                                            </ul>
+                                        </div>
+
+                                        <hr>
+                                        <div>
+                                            <p>First of all, Thank you so much for purchasing this template and for being my loyal customer.
+                                                <strong>You are awesome!</strong>
+                                                <br> You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
+                                            </p>
+
+                                            <p>This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this script is made and how to edit this properly. Basic HTML, CSS & PHP knowledge is required to customize this script.</p>
+
+                                            <h4>Requirements</h4>
+                                            <p>You will need the following sofwares to customize this template.</p>
+                                            <ol>
+                                                <li>PHP 5.6+</li>
+                                                <li>MYSQL</li>
+                                                <li>Code Editing Software (eg: Dreamweaver, Sublime Text or Notepad)</li>
+                                                <li>Web Browser for testing (eg: Google Chrome or Mozilla Firefox)</li>
+                                                <li>FTP Tool to upload files to Server (eg: <a href="https://filezilla-project.org/download.php?type=client" target="_blank">FileZilla</a>) </li>
+                                            </ol>
+                                            <div class="intro2 clearfix">
+                                                <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the script. If not edited properly, the layout may break completely.
+                                                    <br> No support is provided for faulty customization.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Getting Started <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>AdminPro is easy to use admin panel with all basic tools that start development of your amazing web application. Script is built with Codeigniter 3 and uses AdminLTE 3 theme. This Script is starter script made for developers to directly start work on their applications instead of creating basic functionalities like login, users, logs, etc etc which saves time and also saves you from that boring setup. Just Install & you're ready to go.
+                                </p>
+
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <h4>Starter Pack </h4>
+                
+                                <p>AdminPro includes a folder named <code>starter</code>. which is nothing but a starter kit for your new project to get started.</p>
+
+                                <hr>                              
+                
+                                <h4>Main Project </h4>
+                                <p>AdminPro includes a folder named <code>main</code>. which has all components and modules shown in demo</p>
+                
+                              
+                            </div>
+                          </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">How to Install AdminPro <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                
+                                <h4>Steps to install Starter-Project </h4>
+                
+                                <p>Nothing but a Seperate Script made for you to start ! Instead of clearing stuff which is not needed from main folder. So, Basically a Starter Pack for your project.</p>
+                
+                                <ol>
+                                  <li>Copy the <code>starter</code> folder </li>
+                                  <li>Create Database </li>        
+                                  <li>Find and Import the <code>starter_db.sql</code> file from <code>sql</code> folder </li>        
+                                  <li>Open <code>/application/config/database.php</code> and fill the credentials.</li>        
+                                  <li>
+                                    After that, Open the url in Browser, it will take directly to login page
+                                    <br>
+                                    <br>
+                                    <table class="table table-bordered table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th>Username</th>
+                                          <th>Password</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>admin</td>
+                                          <td>admin123</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </li>
+                
+                                  <li>All Done ! Ready to Start </li>
+                                  <li>Now you start The Development Work. You can refer to <a href="#"> Developer Documentation</a> for more info.</li>        
+                                  <li>Happy Coding :)</li>        
+                                </ol>
+                              
+                            </div>
+                            <div class="col-sm-6">
+                
+                                <h4>Steps to Install Main Project</h4>
+                
+                                <p>Includes all Modules and Features as shown in demo and desccription.</p>
+                                <br>
+                
+                                <ol>
+                                  <li>Copy the <code>main</code> folder </li>
+                                  <li>Create Database </li>        
+                                  <li>Find and Import the <code>main_db.sql</code> file from <code>sql</code> folder </li>        
+                                  <li>Open <code>/application/config/database.php</code> and fill the credentials.</li>        
+                                  <li>
+                                    After that, Open the url in Browser, it will take directly to login page
+                                    <br>
+                                    <br>
+                                    <table class="table table-bordered table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th>Username</th>
+                                          <th>Password</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>admin</td>
+                                          <td>admin123</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </li>
+                
+                                  <li>All Done ! Ready to Start </li>
+                                  <li>Now you start The Development Work. You can refer to <a href="#"> Developer Documentation</a> for more info.</li>        
+                                  <li>Happy Coding :)</li>        
+                                </ol>
+                              
+                            </div>
+                          </div>
+                          
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Dependencies & Plugins <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i> Note! You need to load the js/css files of the plugin that you want to use. AdminLTE doesn’t load automatically all plugins, this would cause huge load times on every page load.</p>
+                        </div>
+                        
+                        <h4>Dependencies</h4>
+                        <ul>
+                            <li><a href="https://getbootstrap.com/">Bootstrap 4.6</a></li>
+                            <li><a href="https://jquery.com/">jQuery 3.5.1+</a></li>
+                            <li><a href="https://popper.js.org/">Popper.js 1.16.1+</a></li>
+                            <li><a href="#plugins">All other plugins are listed below</a></li>
+                          </ul>
+                          
+                        <hr>
+
+                        <h4>Plugins</h4>
+                        <div class="row px-3">
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Charts</h4></li>
+                                <li><a href="https://www.chartjs.org/" rel="noopener" target="_blank">ChartJS</a></li>
+                                <li><a href="http://www.flotcharts.org/" rel="noopener" target="_blank">Flot</a></li>
+                                <li><a href="https://github.com/mariusGundersen/sparkline" rel="noopener" target="_blank">Sparkline</a></li>
+                                <li><a href="https://github.com/leeoniya/uPlot/" rel="noopener" target="_blank">uPlot</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Editors</h4></li>
+                                <li><a href="https://summernote.org/" rel="noopener" target="_blank">Summernote</a></li>
+                                <li><a href="https://codemirror.net/" rel="noopener" target="_blank">CodeMirror</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Form Elements</h4></li>
+                                <li><a href="https://farbelous.io/bootstrap-colorpicker/">Bootstrap Colorpicker</a></li>
+                                <li><a href="https://github.com/seiyria/bootstrap-slider/">Bootstrap Slider</a></li>
+                                <li><a href="https://github.com/Bttstrp/bootstrap-switch">Bootstrap Switch</a></li>
+                                <li><a href="http://www.daterangepicker.com/" rel="noopener" target="_blank">Date Range Picker</a></li>
+                                <li><a href="https://www.dropzonejs.com/" rel="noopener" target="_blank">Dropzone JS</a></li>
+                                <li><a href="https://github.com/bantikyan/icheck-bootstrap#readme" rel="noopener" target="_blank">iCheck Bootstrap</a></li>
+                                <li><a href="https://github.com/RobinHerbots/Inputmask/" rel="noopener" target="_blank">Inputmask</a></li>
+                                <li><a href="http://ionden.com/a/plugins/ion.rangeSlider/" rel="noopener" target="_blank">Ion.RangeSlider</a></li>
+                                <li><a href="https://select2.org/" rel="noopener" target="_blank">Select2</a></li>
+                                <li><a href="https://tempusdominus.github.io/bootstrap-4/" rel="noopener" target="_blank">Tempus Dominus</a></li>
+                                <li><a href="https://github.com/istvan-ujjmeszaros/bootstrap-duallistbox#readme" rel="noopener" target="_blank">Bootstrap4 Duallistbox</a></li>
+                                <li><a href="https://github.com/Johann-S/bs-custom-file-input#readme" rel="noopener" target="_blank">bs-custom-file-input</a></li>
+                                <li><a href="https://github.com/Johann-S/bs-stepper#readme" rel="noopener" target="_blank">bs-stepper</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="row px-3">
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Icon Packs</h4></li>
+                                <li><a href="https://fontawesome.com/" rel="noopener" target="_blank">FontAwesome 5</a></li>
+                                <li><a href="https://github.com/lipis/flag-icon-css#readme" rel="noopener" target="_blank">flag-icon-css</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Table Grids</h4></li>
+                                <li><a href="https://datatables.net/" rel="noopener" target="_blank">DataTables</a></li>
+                                <li><a href="https://datatables.net/extensions/" rel="noopener" target="_blank">DataTables (Included all open-source extensions with Bootstrap 4 styling)</a></li>
+                                <li><a href="http://js-grid.com/" rel="noopener" target="_blank">jsGrid</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Notifications</h4></li>
+                                <li><a href="https://sweetalert2.github.io/" rel="noopener" target="_blank">SweetAlert2</a></li>
+                                <li><a href="https://codeseven.github.io/toastr/" rel="noopener" target="_blank">Toastr</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="row px-3">
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Others</h4></li>
+                                <li><a href="https://github.com/ftlabs/fastclick#readme" rel="noopener" target="_blank">FastClick</a></li>
+                                <li><a href="https://fullcalendar.io/">FullCalendar 4</a></li>
+                                <li><a href="https://github.com/aterrien/jQuery-Knob#readme">jQuery Knob</a></li>
+                                <li><a href="https://jqueryui.com/" rel="noopener" target="_blank">jQuery UI</a></li>
+                                <li><a href="https://jqueryvalidation.org/" rel="noopener" target="_blank">jQuery Validation</a></li>
+                                <li><a href="https://www.vincentbroute.fr/mapael/" rel="noopener" target="_blank">jQuery Mapael</a></li>
+                                <li><a href="https://github.com/bbmumford/jqvmap#readme" rel="noopener" target="_blank">jQuery Vector Map</a></li>
+                                <li><a href="https://kingsora.github.io/OverlayScrollbars/" rel="noopener" target="_blank">Overlay Scrollbars</a></li>
+                                <li><a href="https://github.com/lgaitan/pace#readme" rel="noopener" target="_blank">Pace Progress</a></li>
+                                <li><a href="https://github.com/giotiskl/filterizr#readme" rel="noopener" target="_blank">FilterizR</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-4">
+                              <ul class="list-unstyled">
+                                <li><h4>Plugin Dependencies</h4></li>
+                                <li><a href="https://github.com/jquery/jquery-mousewheel#readme" rel="noopener" target="_blank">jQuery Mousewheel</a></li>
+                                <li><a href="https://momentjs.com/" rel="noopener" target="_blank">Moment.js</a></li>
+                                <li><a href="https://dmitrybaranovskiy.github.io/raphael/" rel="noopener" target="_blank">Raphaël</a></li>
+                                <li><a href="https://github.com/bpampuch/pdfmake#readme" rel="noopener" target="_blank">pdfmake</a></li>
+                                <li><a href="https://github.com/Stuk/jszip#readme" rel="noopener" target="_blank">jszip</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Roles & Permissions <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>Here, you can manage roles & permissions for the users. You can manage which role can have access to which section/feature</p>
+                                <ul>
+                                    <li><code>Permissions -> Roles -> Users</code></li>
+                                    <li>This means, Permissions are attached to roles and further roles can be linked to users. So, to change any permission for specific role, just edit and update permissions. It will be applied to all users linked to that role.</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-12">
+                                <p>To implement any permission, <code>hasPermission</code> function can be called to check if logged in user has access to the particular permission</p>
+                                <pre  class="brush: html">hasPermission('permission_code_name')</pre>
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Settings <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>Settings are provided to manage application and configure with ease. To standardize some tasks, like date format, timezone, etc. This section will allow us to manage application from one place.</p>
+                            </div>
+
+                            <div class="col-md-12">
+                                <p>To access any setting. It returns <code>value</code></p>
+                                <pre  class="brush: html">setting('key')</pre>
+                            </div>
+
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">FAQ's <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Can i customize this script ?</h4>
+                                <p>
+                                    Yes, the script can be customized easily.
+                                </d</p>iv>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Can i change theme ?</h4>
+                                <p>
+                                    Yes, Changing theme is possible. However, It will require some knowledge of codeigniter directory structure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Does it have Crud Operations available ?</h4>
+                                <p>
+                                    Crud Operations are avilable but only for database table functions. Every Model that extends <code>MY_MODEL</code> class can access to crud functions. Documentation will be available soon.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line8" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Support Desk <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Please remember you have purchased a very affordable script. Occasionally we will help with small tweaks, but these requests will be put on a lower priority due to their nature. Support is also 100% optional and we provide it for your connivence, so please be patient, polite and respectful.</p>
+
+                                <p>Please visit our <a href="http://codecanyon.net/user/ramantech"><strong>profile page</strong></a> or ask question <a href="mailto:ramansaluja849@gmail.com">ramansaluja849@gmail.com</a></p>
+
+                                <strong>Support for my items includes:</strong>
+                                <ul>
+                                    <li>* Responding to questions or problems regarding the item and its features</li>
+                                    <li>* Fixing bugs and reported issues</li>
+                                    <li>* Providing updates to ensure compatibility</li>
+                                </ul>
+                                <strong>Item support does not include:</strong>
+                                <ul>
+                                    <li>* Customization and installation services</li>
+                                    <li>* Support for third party software and plug-ins</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>Before seeking support, please...</strong>
+                                <ul>
+                                    <li>* Make sure your question is a valid Issue and not a customization request.</li>
+                                    <li>* Make sure you have read through the documentation and any related video guides before asking support on how to accomplish a task.</li>
+                                    <li>* Make sure to double check the AdminPro FAQs.</li>
+                                    <li>* If you have customized code and now have an issue, back-track to make sure you didn't make a mistake. If you have made changes and can't find the issue, please provide us with your changelog.</li>
+                                    <li>* Almost 80% of the time we find that the solution to people's issues can be solved with a simple "Google Search". You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+                                    <li>* Make sure to state the name of the item you are having issues with when requesting support via Codecanyon.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line9" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Version History (Changelog) <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script. No guarantees, but I'll do my best to assist. If you have a more general question relating to the project on Codecanyon, you might consider  visting FAQ's section.</p>
+
+                                <hr>
+
+                                <h4>Changelog</h4>
+
+                                <pre class="brush: html">
+
+                                    -----------------------------------------------------
+                                    # Version 1.2
+                                    -----------------------------------------------------
+                                    
+                                    - [fixed] minor bugs
+                                    - [fixed] login by changing value '1' from cookie
+                                    - [update] upgraded to latest CI version 3.1.11
+                                    - [update] secured login system with additional validations and security practices
+                                    - [update] documentation redesigne
+                                    - [new] seperate tab in profile page for changing password
+                                    - [new] google recaptchs with enable/disable feature
+                                    - [new] manage email template directly in settings
+                                    - [new] custom 404 &amp; 403 error pages according to theme
+                                    - [new] user status active/inactive
+                                    - [new] enabled csrf protection &amp; xss clean, prevent sql injection 
+                                    - [new] developer documentation
+                                    - [new] ability to change login page background image
+                                    
+                                    -----------------------------------------------------
+                                    # Version 1.1
+                                    -----------------------------------------------------
+                                
+                                    - [Fixed]        Reported Bugs
+                                    - [Fixed]        Roles &amp; Permissions in session when user is logged in
+                                    - [Fixed]        Roles name in users list
+                                    - [New]        Added Option to change Login Theme
+                                    - [New]        New Database Backup Feature 
+                                    - [New]        Upgrade to Codeigniter Version 3.1.10
+                                    - [New]        All AdminLTE Components are included as shown in demo
+                                
+                                
+
+
+                                      </pre>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line10" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Copyright and license <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                                <p>Code released under the <a href="#" target="_blank">Un License</a> License.</p>                        
+                                <p>For more information about copyright and license check <a href="https://choosealicense.com/" target="_blank">choosealicense.com</a>.</p>
+                            
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    
+
+                    <section id="line11" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Files & Sources <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i> Note! It is recommended that you understand Codeigniter files & folder structure as this application is built with codeigniter framework. To know more <a href="https://www.codeigniter.com/userguide3/index.html" target="_blank">click here !</a></p>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>Included Folders</strong>
+                                <ol>
+                                    <li>application - Your Application Folder where you can manage your APP</li>
+                                    <li>assets - includes stylesheets, Javascript, images and other media files</li>
+                                    <li>system - codeigniter system files (*don't edit/change these files) </li>
+                                    <li>uploads - includes uploaded files</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <strong>application includes</strong>
+                                <p>These are files where you mostly interact while developing you amazing application </p>
+
+                                <ol>
+                                    <li>cache - cache files</li>
+                                    <li>config - Configuration for your application</li>
+                                    <li>controllers - All controller classes & methods</li>
+                                    <li>core - to extend core functionalities of system</li>
+                                    <li>helpers - helper functions used in app</li>
+                                    <li>hooks - to hook into system files & functions without changing system files</li>
+                                    <li>language - language translation files</li>
+                                    <li>libraries - custom classes & libraries</li>
+                                    <li>logs - log errors & warnings</li>
+                                    <li>models - files which directly talk with Database</li>
+                                    <li>third_party - to add third party code</li>
+                                    <li>views - view files which actually displays by controllers</li>
+                                </ol>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <strong>asests Includes</strong>
+
+                                <p>All css, js, jquery plugins can be found here.</p>
+
+                                <ol>
+                                    <li>css - Includes css files</li>
+                                    <li>img - Includes images</li>
+                                    <li>js - Javascript files</li>
+                                    <li>plugins - third party jquery & css plugins</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    
+
+                    <section id="line12" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Controllers <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="intro2 clearfix">
+                            <p><i class="fa fa-exclamation-triangle"></i> Controllers are entry points for your application. Format for urls is <pre><code>http://website.com/controller/method</code></pre></p> 
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>MY_CONTROLLER</strong>
+                                <p>It is recommended for pages once user is logged in. Controllers which are used for logged in user must extend <code>MY_Controller</code>. You can explore other controller to understand more.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>To create a controller</strong>
+                                <ol>
+                                    <li>Create a New File in <code>./application/controllers/</code> folder following naming conditions.</li>
+                                    <li>Copy the below code and paste it your file</li>
+                                </ol>
+
+                                <pre class="brush: php">&lt;?php defined('BASEPATH') OR exit('No direct script access allowed');
+                                    
+class Controller_Name extends MY_Controller {
+                                    
+    public function __construct()
+    {
+        parent::__construct();
+        $this-&gt;page_data['page']-&gt;title = 'Activity Logs';
+        // not mandatory, takes default value if not passed
+        $this-&gt;page_data['page']-&gt;menu = 'activity_logs';
+    }
+                                    
+    public function index()
+    {
+    }
+
+
+}
+
+/* End of file Controller_Name.php */
+/* Location: ./application/controllers/Controller_Name.php */</pre>
+
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+
+                    <section id="line13" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Models <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <p>Models are the one which interacts directly with Database and reponsible for tasks related database like exectuing SQL.</p>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>MY_MODEL</strong>
+                                <p>Models which you can create should extend <code>MY_MODEL</code>. It will give you access to CRUD functionality </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>To create a model</strong>
+                                <ol>
+                                    <li>Create a New File in <code>./application/models/</code> folder following naming conditions.</li>
+            <li>Copy the below code and paste it your model file</li>
+                                </ol>
+
+                                <pre class="brush: php">&lt;?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class name_Model extends MY_Model {
+
+    public $table = 'table_name';
+
+    public function __construct()
+    {
+    parent::__construct();
+    }
+
+}
+
+/* End of file name_Model.php */
+/* Location: ./application/models/name_Model.php */</pre>
+
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+
+                    <section id="line14" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Views <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <p>Views includes code which can have html, css, php and displays data/result to user. Basically, it includes UI of your application</p>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <strong>To create a view</strong>
+                                <ol>
+                                    <li>Create a New File in <code>./application/views/</code> folder following naming conditions.</li>
+            <li>Copy the below code and paste it your views file</li>
+                                </ol>
+
+                                <pre class="brush: php">&#x3C;?php
+defined(&#x27;BASEPATH&#x27;) OR exit(&#x27;No direct script access allowed&#x27;); ?&#x3E;
+
+&#x3C;?php include viewPath(&#x27;includes/header&#x27;); ?&#x3E;
+
+
+&#x3C;!-- Content Header (Page header) --&#x3E;
+&#x3C;section class=&#x22;content-header&#x22;&#x3E;
+    &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+    &#x3C;div class=&#x22;row mb-2&#x22;&#x3E;
+        &#x3C;div class=&#x22;col-sm-6&#x22;&#x3E;
+        &#x3C;h1&#x3E;&#x3C;?php echo lang(&#x27;title&#x27;) ?&#x3E;&#x3C;/h1&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;div class=&#x22;col-sm-6&#x22;&#x3E;
+        &#x3C;ol class=&#x22;breadcrumb float-sm-right&#x22;&#x3E;
+            &#x3C;li class=&#x22;breadcrumb-item&#x22;&#x3E;&#x3C;a href=&#x22;&#x3C;?php echo url(&#x27;/&#x27;) ?&#x3E;&#x22;&#x3E;&#x3C;?php echo lang(&#x27;home&#x27;) ?&#x3E;&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;breadcrumb-item active&#x22;&#x3E;&#x3C;?php echo lang(&#x27;title&#x27;) ?&#x3E;&#x3C;/li&#x3E;
+        &#x3C;/ol&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;&#x3C;!-- /.container-fluid --&#x3E;
+&#x3C;/section&#x3E;
+
+    &#x3C;!-- Main content --&#x3E;
+    &#x3C;section class=&#x22;content&#x22;&#x3E;
+        &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
+        &#x3C;div class=&#x22;row&#x22;&#x3E;
+            &#x3C;div class=&#x22;col-12&#x22;&#x3E;
+            &#x3C;div class=&#x22;card&#x22;&#x3E;
+                &#x3C;div class=&#x22;card-header d-flex p-0&#x22;&#x3E;
+                &#x3C;h3 class=&#x22;card-title p-3&#x22;&#x3E;&#x3C;?php echo lang(&#x27;title&#x27;) ?&#x3E;&#x3C;/h3&#x3E;
+                &#x3C;div class=&#x22;ml-auto p-2&#x22;&#x3E;
+&#x3C;!-- buttons --&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;!-- /.card-header --&#x3E;
+                &#x3C;div class=&#x22;card-body&#x22;&#x3E;
+&#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+
+                &#x3C;/div&#x3E;
+                &#x3C;!-- /.card-body --&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /.card --&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;!-- /.col --&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;!-- /.row --&#x3E;
+        &#x3C;/div&#x3E;
+        &#x3C;!-- /.container-fluid --&#x3E;
+    &#x3C;/section&#x3E;
+    &#x3C;!-- /.content --&#x3E;
+
+
+
+&#x3C;?php include viewPath(&#x27;includes/footer&#x27;); ?&#x3E;</pre>
+
+                            </div>
+
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    
+
+                    <section id="line15" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Helper Functions<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <!-- <p>Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script. No guarantees, but I'll do my best to assist. If you have a more general question relating to the project on Codecanyon, you might consider  visting FAQ's section.</p>                                 -->
+                                <ol>
+                                    <li><p class="text-bold">Create Url</p> <pre class="brush: php">url(&#x27;/&#x27;);</pre></li>
+                                    <li><p class="text-bold">Get Assets Url</p> <pre class="brush: php">assets_url(&#x27;/&#x27;);</pre></li>
+                                    <li><p class="text-bold">Get Upload Path Url</p> <pre class="brush: php">urlUpload(&#x27;/&#x27;);</pre></li>
+                                    <li><p class="text-bold">Get User Profile Image Url by ID</p> <pre class="brush: php">userProfile(1);</pre></li>
+                                    <li><p class="text-bold">Get POST Input</p> <pre class="brush: php">post(key);</pre></li>
+                                    <li><p class="text-bold">Get GET Input</p> <pre class="brush: php">get(key);</pre></li>
+                                    <li><p class="text-bold">Allow when POST input data is sent</p> <pre class="brush: php">postAllowed();</pre></li>
+                                    <li><p class="text-bold">Print Data (used in debugging);</p> <pre class="brush: php">dd($data);</pre></li>
+                                    <li><p class="text-bold">To Check if User Logged In</p> <pre class="brush: php">is_logged();</pre></li>
+                                    <li><p class="text-bold">Get All Data of Logged In User</p> <pre class="brush: php">logged();</pre></li>
+                                    <li><p class="text-bold">Get Specific Data of Logged In User</p> <pre class="brush: php">logged(key);</pre></li>
+                                    <li><p class="text-bold">Get View Path</p> <pre class="brush: php">viewPath('/');</pre></li>
+                                    <li><p class="text-bold">Convert Date into Database Date Format</p> <pre class="brush: php">dateFormat( date );</pre></li>
+                                    <li><p class="text-bold">Function to show amount using custom format</p> <pre class="brush: php">currency( amount );</pre></li>
+                                    <li><p class="text-bold">Get value of any Setting using key</p> <pre class="brush: php">setting( code );</pre></li>
+                                    <li><p class="text-bold">Generate HTML breadcrumb</p> <pre class="brush: php">breadcrumb( [ '/admin' => 'Admin' ] );</pre></li>
+                                    <li><p class="text-bold">Get Visitor IP Address</p> <pre class="brush: php">ip_address();</pre></li>
+                                    <li><p class="text-bold">Get Basic Shortcodes available for all Email Template</p> <pre class="brush: php">getEmailShortCodes();</pre></li>
+                                    <li><p class="text-bold">To Check if user has permission to access specific modole/section otherwise it will show 403 error</p> <pre class="brush: php">ifPermissions(code);</pre></li>
+                                    <li><p class="text-bold">Only Checks permission using code, and returns <code>boolean</code></p> <pre class="brush: php">hasPermissions('key');</pre></li>
+                                    <li><p class="text-bold">Obfuscate Email</p> <pre class="brush: php">obfuscate_email(email);</pre></li>
+                                    <li><p class="text-bold">More Funtions will be added in future updates....</pre></li>
+                                  </ol>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+
+                    <section id="line16" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">MY_MODEL<hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>This is a custom controller which is extended by other models <br> Basically It provides some basic functions which are used to perform the operations on a table <br> For Example -- Customers_model extends MY_Model, so functions available will be :</p>
+
+                                <ul>
+                                    <li><p class="text-bold">To Get Data</p> <pre class="brush: php">$this->customers_model->get();</pre></li>
+                                    <li><p class="text-bold">To Get Data Row By ID</p> <pre class="brush: php">$this->customers_model->getById($id);</pre></li>
+                                    <li><p class="text-bold">To Get Specific Data Column-Row By ID</p> <pre class="brush: php">$this->customers_model->getRowById($id, $row);</pre></li>
+                                    <li><p class="text-bold">Insert the data adn returns inserted ID</p> <pre class="brush: php">$this->customers_model->create($data);</pre></li>
+                                    <li><p class="text-bold">Insert the batch data i.e multiple data </p> <pre class="brush: php">$this->customers_model->create_batch($data);</pre></li>
+                                    <li><p class="text-bold">Update the data by ID</p> <pre class="brush: php">$this->customers_model->update($id, $data);</pre></li>
+                                    <li><p class="text-bold">Delete the data by ID </p> <pre class="brush: php">$this->customers_model->delete($id);</pre></li>
+                                    <li><p class="text-bold">Select Data with where conditions with custom arguments</p> <pre class="brush: php">$this->customers_model->getByWhere( $whereArg, $args = [] );</pre></li>
+                                    <li><p class="text-bold">Predict the next ID for a table</p> <pre class="brush: php">$this->customers_model->predictId();</pre></li>
+                                    <li><p class="text-bold">Total Number of Rows in a Table</p> <pre class="brush: php">$this->customers_model->countAll();</pre></li>
+                                  </ul>
+
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+
+                </div>
+                <!-- // end .col -->
+
+            </div>
+            <!-- // end .row -->
+
+        </div>
+        <!-- // end container -->
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>
